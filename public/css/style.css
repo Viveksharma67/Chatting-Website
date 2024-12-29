@@ -1,0 +1,97 @@
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    position: relative;
+    background-color: #f0f0f0;
+    max-width: 1000px;
+    margin: auto;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.msg {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f0f0f0;
+    height: calc(80vh - 80px); /* कंटेनर की ऊंचाई से इनपुट सेक्शन की ऊंचाई घटाएं */
+    overflow-y: auto; /* वर्टिकल स्क्रॉलिंग सक्षम करें */
+    scroll-behavior: smooth; /* स्क्रॉलिंग को स्मूद बनाएं */
+}
+
+.msg-item {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    margin: 5px 0;
+    padding: 10px;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+}
+
+.left {
+    align-self: flex-start;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.right {
+    align-self: flex-end;
+    background-color: #cfe2ff;
+    color: #084298;
+}
+.input-container {
+    position: absolute; /* इनपुट को स्क्रीन के नीचे स्थिर करें */
+    bottom: 0; /* पेज के सबसे नीचे */
+    left: 0;
+    width: 100%; /* पूरी चौड़ाई कवर करें */
+    display: flex;
+    align-items: center; /* वर्टिकली सेंटर्ड कंटेंट */
+    padding: 10px;
+    background-color: #f8f9fa; /* हल्का बैकग्राउंड */
+    border-top: 1px solid #e0e0e0; /* टॉप बॉर्डर */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* हल्का शैडो */
+    z-index: 10; /* ऊपर रखें ताकि अन्य कंटेंट इसे कवर न करे */
+}
+
+.input-field {
+    width: 840px;
+    flex: 1; /* इनपुट फील्ड को पूरी चौड़ाई दें */
+    padding: 10px 15px; /* अंदर की स्पेसिंग */
+    border: 1px solid #ccc; /* हल्का बॉर्डर */
+    border-radius: 20px; /* गोल किनारे */
+    font-size: 14px; /* टेक्स्ट का आकार */
+    outline: none; /* फोकस के दौरान बॉर्डर हटा दें */
+    margin-right: 10px; /* बटन से दूरी बनाए रखें */
+    background-color: #fff; /* सफेद बैकग्राउंड */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); /* अंदर का हल्का शैडो */
+}
+
+.send-button {
+    padding: 10px 20px; /* बटन का आकार */
+    background-color: #007bff; /* नीला रंग */
+    color: #fff; /* सफेद टेक्स्ट */
+    border: none; /* बॉर्डर हटाएं */
+    border-radius: 20px; /* गोल बटन */
+    cursor: pointer; /* माउस पॉइंटर को संकेत दें */
+    font-size: 14px; /* टेक्स्ट का आकार */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* हल्का शैडो */
+    transition: background-color 0.3s ease; /* स्मूद कलर ट्रांज़िशन */
+    margin-right: 20px;
+}
+
+.send-button:hover {
+    background-color: #0056b3; /* होवर पर गहरा नीला */
+}

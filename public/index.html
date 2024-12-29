@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="5576258.webp" alt="Chat App Logo">
+    </nav>
+    <div class="container">
+        <div class="msg" id="message-container">
+            <!-- Messages will appear here dynamically -->
+        </div>
+        <div class="input-container">
+            <form id="message-form">
+                <input type="text" placeholder="Type your message..." id="message-input" class="input-field" required />
+                <button class="send-button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <script src="js/client.js"></script>
+</body>
+</html>
